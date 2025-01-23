@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+const aaaValue = process.env.REACT_APP_AAA;
 
 class App extends Component {
   render() {
@@ -10,6 +11,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Hello from Render!
+          </p>
+          <p>
+            .env AAA value is {aaaValue}
           </p>
           <a
             className="App-link"
